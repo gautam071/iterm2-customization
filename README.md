@@ -1,5 +1,7 @@
 # My Itrem Customisation 
 
+Steps to implement to change you iterm
+
 ## iTerm2
 https://www.iterm2.com
 
