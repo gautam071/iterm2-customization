@@ -102,12 +102,26 @@ Press **Y** for the next 3 steps
 
 To start press `control + r`
 
+## Change user name 
+
+Go to file `powerlevel9k.zsh-theme`
+
+find the line
+
+```sh
+set_default POWERLEVEL9K_CONTEXT_TEMPLATE "%n@%m"
+```
+to 
+```sh
+set_default POWERLEVEL9K_CONTEXT_TEMPLATE "%n"
+```
+
 ## Word Jumps
 Enable word jumps: iTerm → Preferences → Profiles → Keys → Load Preset and select Natural Text Editing
 
 Change the username@hostname
 whoam to check your username
-
+wh
 Edit ~/.zshrc
 
 Add:
@@ -116,3 +130,11 @@ DEFAULT_USER = <username>
 
 ## Configure VS Code
 Go to Settings: terminal.integrated.fontFamily: Source Code Pro for Powerline
+
+## Git
+
+Customize git commmands
+
+```sh 
+alias | grep git
+```
