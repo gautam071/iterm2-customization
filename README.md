@@ -1,10 +1,13 @@
 # My Itrem Customisation 
+
 ## iTerm2
 https://www.iterm2.com
 
 Install with:
 
-brew cask install iterm2
+```sh 
+brew cask install iterm2 
+```
 
 After installation, close the terminal. You will need to provide full disk access to iTerm2. System Preferences -> Security and Privacy -> Full Disk Access, click the + icon and select iTerm2 from the Applications folder.
 
@@ -13,7 +16,9 @@ https://ohmyz.sh
 
 Install with:
 
-brew install zsh
+```sh 
+brew install zsh 
+```
 
 Check the version of zsh: zsh --version Make zsh default shell: chsh -s /bin/zsh Check the shell you're using: echo $SHELL
 
@@ -22,21 +27,28 @@ https://ohmyz.sh
 
 Install with:
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```sh  
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"  
+```
 
 Powerlevel9k
 https://github.com/bhilburn/powerlevel9k
 
 Install with:
 
+```sh 
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+```
 
 Edit ~/.zshrc and set as default theme:
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 Install the font:
-https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf Open with FontBook, and click Install.
+```sh 
+https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro%20for%20Powerline.otf
+``` 
+Open with FontBook, and click Install.
 
 Set the font iTerm, make sure size is 14pt: iTerm → Preferences → Profiles → Text → Change Font
 
@@ -52,13 +64,17 @@ Select selected-theme from the dropdown.
 ## zsh Auto Suggestions
 Install with:
 
+```sh 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 
 Add the plugin to ~/.zshrc:
 
+```sh 
 plugins=(
   git zsh-autosuggestions
 )
+```
 Tweak the color solarize theme: iTerm → Preferences → Profiles → Colors tab", change the value of Black Bright to a lighter color.
 
 ## Syntax Highlighting
@@ -68,7 +84,9 @@ https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-m
 
 Add the plugin to ~/.zshrc:
 
+```sh 
 plugins=( [plugins...] zsh-syntax-highlighting)
+```sh 
 
 ## History
 Install with:
