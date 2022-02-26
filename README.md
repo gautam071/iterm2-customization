@@ -40,12 +40,14 @@ https://github.com/powerline/fonts/blob/master/SourceCodePro/Source%20Code%20Pro
 
 Set the font iTerm, make sure size is 14pt: iTerm → Preferences → Profiles → Text → Change Font
 
-Solarize Color Theme
-https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20-%20Patched.itermcolors
+## Iterm theme 
 
-Save as: solarize.itermcolors Configure the theme in iTerm: iTerm2 -> Preferences -> Profiles -> Colors -> Color Presets -> Import and select the file.
+Iterm theme colours 
+https://iterm2colorschemes.com/
 
-Select solarize-dark from the dropdown.
+Save as: selected-theme.itermcolors
+Configure the theme in iTerm: iTerm2 -> Preferences -> Profiles -> Colors -> Color Presets -> Import and select the file.
+Select selected-theme from the dropdown.
 
 ## zsh Auto Suggestions
 Install with:
@@ -62,9 +64,25 @@ Tweak the color solarize theme: iTerm → Preferences → Profiles → Colors ta
 ## Syntax Highlighting
 Install with:
 
-brew install zsh-syntax-highlighting
+https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
 
-Skip to the end of ~/.zshrc and add the line: source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+Add the plugin to ~/.zshrc:
+
+plugins=( [plugins...] zsh-syntax-highlighting)
+
+## History
+Install with:
+
+https://github.com/junegunn/fzf#using-homebrew
+
+Run this command
+
+```sh
+$(brew --prefix)/opt/fzf/install
+```
+Press **Y** for the next 3 steps 
+
+To start press `control + r`
 
 ## Word Jumps
 Enable word jumps: iTerm → Preferences → Profiles → Keys → Load Preset and select Natural Text Editing
