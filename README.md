@@ -88,18 +88,21 @@ Add the plugin to ~/.zshrc:
 
 ```sh 
 plugins=( [plugins...] zsh-syntax-highlighting)
-```sh 
+```
 
 ## History
-Install with:
+Install with git clone:
 
-https://github.com/junegunn/fzf#using-homebrew
-
-Run this command
+Run these command
 
 ```sh
-$(brew --prefix)/opt/fzf/install
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ```
+
+```sh
+~/.fzf/install
+```
+
 Press **Y** for the next 3 steps 
 
 To start press `control + r`
