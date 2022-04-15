@@ -143,3 +143,6 @@ Customize git commmands
 ```sh 
 alias | grep git
 ```
+
+## ZSH alias
+-https://medium.com/fbdevclagos/using-zsh-aliases-for-better-terminal-experience-6f16f261ad52
